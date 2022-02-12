@@ -9,8 +9,7 @@ public class BallMovement : MonoBehaviour
 
     void OnMouseDown()
     {
-        mZCoord = Camera.main.WorldToScreenPoint(
-        gameObject.transform.position).z;
+        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
         // Store offset = gameobject world pos - mouse world pos
         mOffset = gameObject.transform.position - GetMouseAsWorldPoint();

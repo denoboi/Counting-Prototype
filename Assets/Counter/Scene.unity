@@ -244,7 +244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145979411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 7.96, z: -18.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1357351973}
@@ -268,6 +268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CounterText: {fileID: 598753586}
+  ball: {fileID: 191844131}
+  isIn: 0
 --- !u!65 &145979414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -294,6 +296,8 @@ GameObject:
   - component: {fileID: 191844134}
   - component: {fileID: 191844133}
   - component: {fileID: 191844132}
+  - component: {fileID: 191844137}
+  - component: {fileID: 191844138}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -387,12 +391,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191844131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.24, y: 12.09, z: 6.03}
+  m_LocalPosition: {x: -0.52, y: 1.04, z: 1.54}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &191844137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191844131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfdc5d1c067ffa448802e2061105b406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &191844138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191844131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf955801e175d0243bcdd5e92ca27934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &250417154
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +580,7 @@ GameObject:
   - component: {fileID: 658115678}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1065,7 +1093,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 79.7
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1090,13 +1118,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648811350}
-  m_LocalRotation: {x: 0.047684994, y: 0.70442, z: 0.047554716, w: -0.7065813}
-  m_LocalPosition: {x: 21.138144, y: 4.6909904, z: -0.23453474}
+  m_LocalRotation: {x: 0.07210906, y: -0.70342165, z: 0.07209667, w: 0.70342046}
+  m_LocalPosition: {x: 30.21, y: 19.93, z: -8.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.705, y: -90, z: -0.001}
 --- !u!1 &1899638121
 GameObject:
   m_ObjectHideFlags: 0

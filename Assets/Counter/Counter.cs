@@ -8,7 +8,11 @@ public class Counter : MonoBehaviour
 {
     public Text CounterText;
 
+    public GameObject ball;
+
     private int Count = 0;
+
+    public bool isIn;
 
     private void Start()
     {
@@ -17,7 +21,18 @@ public class Counter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Count += 1;
-        CounterText.text = "Count : " + Count;
+
+        isIn = true;
+
+        if(isIn)
+        {
+            Count += 1;
+            CounterText.text = "Count : " + Count;
+        }
+
+       
     }
+
+   
+
 }
